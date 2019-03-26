@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+<com.qmuiteam.qmui.widget.QMUITopBar
+    android:id="@+id/topbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/ToolBar_Size">
+    <Button
+        android:id="@+id/topbar_left_button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        />
+
+</com.qmuiteam.qmui.widget.QMUITopBar>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/qmui_config_color_white"
+        android:columnCount="2"
+        android:layout_marginTop="50dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+        <!--账号-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/qmui_list_item_height"
+            android:layout_gravity="fill_horizontal"
+            android:background="@drawable/qmui_s_list_item_bg_with_border_bottom"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="账号"
+            android:textColor="?attr/qmui_config_color_gray_1"
+            android:textSize="?attr/qmui_common_list_item_title_h_text_size" />
+        <!--账号输入框-->
+        <EditText
+            android:id="@+id/edittext_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:background="@drawable/qmui_divider_bottom_bitmap"
+            android:hint="请输入2到20位字符"
+            android:maxLength="20"
+            android:textColor="?attr/qmui_config_color_gray_5"
+            android:textSize="?attr/qmui_common_list_item_detail_h_text_size" />
+        <!--密码-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/qmui_list_item_height"
+            android:layout_gravity="fill_horizontal"
+            android:background="@drawable/qmui_s_list_item_bg_with_border_bottom"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="密码"
+            android:textColor="?attr/qmui_config_color_gray_1"
+            android:textSize="?attr/qmui_common_list_item_title_h_text_size" />
+        <!--密码输入框-->
+        <EditText
+            android:id="@+id/edittext_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:background="@drawable/qmui_divider_bottom_bitmap"
+            android:hint="请输入6到20位密码"
+            android:maxLength="20"
+            android:layout_marginTop="10dp"
+            android:inputType="textPassword"
+            android:textColor="?attr/qmui_config_color_gray_5"
+            android:textSize="?attr/qmui_common_list_item_detail_h_text_size" />
+    </GridLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="300dp"
+            android:textColor="?attr/qmui_config_color_gray_5"
+            android:clickable="true"
+            android:text="忘记密码"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="50dp"
+            android:shadowColor="@color/btn"
+            android:background="@drawable/shape"
+            android:text="登陆" />
+    </LinearLayout>
+</LinearLayout>
